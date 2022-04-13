@@ -28,18 +28,7 @@ const InfobloxRest = (params) => {
   params.strict = !!params.strict;
   params.logger = params.logger || null;
 
-  /**
-   * Returns new Infoblox rest api
-   *
-   * @return {InfobloxRestClient} api client
-   */
-  function client() {
-    return new InfobloxRestClient(params);
-  }
-
-  return {
-    client
-  };
+  return new InfobloxRestClient(params);
 };
 
 

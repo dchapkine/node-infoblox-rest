@@ -19,7 +19,8 @@ Request, behind this library will pick it up.
 ```js
 (async () => {
  
-  const infoblox = require("infoblox-rest")({
+  const infoblox = require("infoblox-rest");
+  const cli = infoblox({
     // configure your infoblox host, login and password
     url: "https://localhost",
     user: "usern4me",
@@ -29,8 +30,7 @@ Request, behind this library will pick it up.
     version: "v2.9",
     timeout: 30000
   });
-  const cli = infoblox.client();
-  
+
   // get supported wapi versions
   const res = await cli.request({method: 'GET', uri: `?_schema`});
   return res.data.supported_versions;
