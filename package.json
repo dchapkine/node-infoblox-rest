@@ -1,6 +1,6 @@
 {
   "name": "infoblox-rest",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple Infoblox REST API client for NodeJS",
   "main": "index.js",
   "scripts": {
