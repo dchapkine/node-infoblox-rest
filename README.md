@@ -15,7 +15,8 @@ npm install --save infoblox-rest
     url: "https://infoblox.dev",
     user: "username",
     pass: "passw0rd",
-    version: "v2.9"
+    version: "v2.9",
+    timeout: 60000
   });
   const cli = infoblox.client();
 
