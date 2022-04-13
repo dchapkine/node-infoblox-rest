@@ -43,7 +43,7 @@ class InfobloxRestClient {
       pass: params.pass
     };
     options.headers = headers;
-    options.timeout = 5000;
+    options.timeout = 60000;
     options.json = true;
     options.strictSSL = params.strict;
     if (data) {
